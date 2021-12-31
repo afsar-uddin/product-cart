@@ -1,20 +1,23 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import tshirt from '../assets/tshirt.jpg'
+import SlickThub from '../SlickThub';
 
 const ProductDetail = () => {
     const [incDec, setIncDec] = useState(1);
     const handleInc = () => {
-        setIncDec(counter => counter + 1)
+        setIncDec(incDec + 1)
     }
     const handleDec = () => {
-        setIncDec(counter => counter - 1)
+        if (incDec > 1) {
+            setIncDec(incDec - 1)
+        }
     }
     let productPrice = 89 * incDec;
     return (
         <div className='product-detail'>
             <div className='product-figure padding'>
-                <img src={tshirt} alt="T-Shirt" />
+                <SlickThub />
             </div>
             <div className='product-desc padding'>
                 <h2>Awesome black T-shirt</h2>
@@ -27,7 +30,7 @@ const ProductDetail = () => {
                 </div>
                 <div className='add2cart'> <Link className='link-btn' to="/cart">Add to cart</Link> </div>
             </div>
-        </div>
+        </div >
     );
 };
 
