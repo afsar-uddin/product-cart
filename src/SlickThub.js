@@ -40,23 +40,15 @@ const SlickThub = () => {
     const slidesData = [
         {
             id: 1,
-            title: 'repellendus id ullam',
-            label: 'Dolorem officiis temporibus.',
             cover: "https://github.com/afsar-uddin/githubPhotos/blob/main/products-image/1.png?raw=true"
         }, {
             id: 2,
-            title: 'excepturi consequatur est',
-            label: 'Officia non provident dolor esse et neque.',
             cover: "https://github.com/afsar-uddin/githubPhotos/blob/main/products-image/2.png?raw=true"
         }, {
             id: 3,
-            title: 'eius doloribus blanditiis',
-            label: 'Ut recusandae vel vitae molestiae id soluta.',
             cover: "https://github.com/afsar-uddin/githubPhotos/blob/main/products-image/3.png?raw=true"
         }, {
             id: 4,
-            title: 'nihil voluptates delectus',
-            label: 'Qui vel consequatur recusandae illo repellendus.',
             cover: "https://github.com/afsar-uddin/githubPhotos/blob/main/products-image/4.png?raw=true"
         }
     ];
@@ -78,7 +70,7 @@ const SlickThub = () => {
                 )}
 
             </Slider>
-            <div className="thumbnail-slider-wrap">
+            <div className="thumbnail-slider-wrap thumbnail">
                 <Slider
                     {...settingsThumbs}
                     asNavFor={nav1}

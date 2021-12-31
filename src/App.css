@@ -29,7 +29,7 @@
   justify-content: center;
   border: 1px solid #ddd;
   max-width: 900px;
-  margin: 60px auto;
+  margin: 15px auto;
   border-radius: 5px;
 }
 
@@ -79,14 +79,6 @@
 .thumbnail-slider-wrap .slick-track .slick-slide img {
   margin: 0 auto;
 }
-
-
-
-
-
-
-
-
 .thumbnail-slider-wrap {
   margin-top: 15px;
   height: 85px;
@@ -95,5 +87,90 @@
   text-align: center;
 }
 .thumbnail-slider-wrap .slick-track .slick-slide img {
-  width: 70%;
+  width: 100%;
+  height: 100%;
+}
+.thumbnail .slick-slide img {
+  opacity: 0.3;
+}
+.thumbnail .slick-slide.slick-active.slick-center.slick-current img {
+  opacity: 1;
+}
+.thumbnail .slick-slide img {
+  opacity: 0.3;
+}
+.thumbnail .slick-slide.slick-active.slick-center.slick-current img {
+  opacity: 1;
+}
+.thumbnail {
+  max-width: 360px;
+  width: 100%;
+}
+.thumbnail .slick-slide {
+  width: 120px !important;
+  height: 100px;
+}
+.colors {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.colors span {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+.colors span.blue {
+  background-color: blue;
+}
+.colors span.black {
+  background-color: black;
+}
+.colors span.red {
+  background-color:red;
+}
+.colors span.yellow {
+  background-color: yellow;
+}
+.colors div {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.colors div input {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #ddd;
+}
+
+.color-col {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.color-col b {
+  margin-right: 15px;
+}
+@media screen and (max-width: 860px) {
+  .product-detail .product-figure {
+    width: 100%;
+  }
+  .product-detail {
+    display: block;
+    padding: 15px;
+    margin: 15px;
+  }
+  .product-detail div.padding {
+    padding: 0;
+  }
+  .colors div {
+    margin: 10px;
+  }
 }
