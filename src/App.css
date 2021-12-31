@@ -21,6 +21,7 @@
   font-weight: 600;
   text-transform: capitalize;
   border-radius: 5px;
+  margin: 10px 0;
 }
 .page-content {
   max-width: 1300px;
