@@ -22,14 +22,17 @@
   text-transform: capitalize;
   border-radius: 5px;
 }
-
+.page-content {
+  max-width: 1300px;
+  margin: 0 auto;
+}
 .product-detail {
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #ddd;
   max-width: 900px;
-  margin: 15px auto;
+  margin: 0 auto;
   border-radius: 5px;
 }
 
