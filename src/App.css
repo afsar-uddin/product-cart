@@ -158,6 +158,20 @@
 .color-col b {
   margin-right: 15px;
 }
+.thumbnail .slick-prev, 
+.thumbnail .slick-next {
+  top: -190%;
+  background: rgba(0, 0, 0, 0.5);
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+}
+
+.thumbnail .slick-prev:hover, 
+.thumbnail .slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (max-width: 860px) {
   .product-detail .product-figure {
     width: 100%;
